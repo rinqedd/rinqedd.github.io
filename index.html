@@ -1,1 +1,28 @@
-get out of here
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ip logger 😈😈😈</title>
+  </head>
+  <body>
+    <button onclick="sendMessage()">Send</button>
+  </body>
+
+  <script>
+    function sendMessage() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1145530246687375390/v9GBEeZk5v6bkdCASMZAGAUTWsX4UtoqbSDqaXodMI9v-SFAVvwoJhNhGFzshnBoKuGh");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        //username: "",
+        //avatar_url: "",
+        content: "your ip"
+      }
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
+</html>
