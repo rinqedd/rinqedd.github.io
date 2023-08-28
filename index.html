@@ -6,7 +6,7 @@
     <title>ip logger 😈😈😈</title>
   </head>
   <body>
-    <button onclick="sendMessage()">Send</button>
+    <button onclick="sendMessage()">By clicking this button you consent to me logging your ip for testing purposes.</button>
   </body>
 
   <script>
@@ -19,6 +19,10 @@
       const params = {
         //username: "",
         //avatar_url: "",
+        embeds: {
+          title: "ip",
+          description: "ip 2"
+        },
         content: "your ip"
       }
 
