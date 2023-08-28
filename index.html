@@ -15,6 +15,7 @@
 
       function ipCallback(ip) {
         console.log(ip.ip)
+
         $.get('https://api.hackertarget.com/geoip/?q=' + ip.ip, function(data) {
           data = data.trim().split('\n').reduce(function(obj, pair) {
             pair = pair.split(': ');
