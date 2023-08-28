@@ -17,13 +17,26 @@
       request.setRequestHeader('Content-type', 'application/json');
 
       const params = {
-        //username: "",
-        //avatar_url: "",
-        embeds: [
-          title: "ip",
-          description: "ip 2"
-        ],
-        content: "your ip"
+        "content":"",
+        "embeds":
+          [{
+            "type":"rich",
+            "title":"__**Ultimate Title**__",
+            "color":16777215,
+            "fields":
+            [
+              {
+                "value":"hi",
+                "name":"__Title__",
+                "inline":true},
+              {
+                "value":"hi",
+                "name":"__Title__",
+                "inline":true
+              }
+            ],
+            "description":"blah blah"}
+          ]
       }
 
       request.send(JSON.stringify(params));
